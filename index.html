@@ -70,101 +70,191 @@
         text-decoration: underline;
       }
 
-      .konkhmer-sleokchher-regular {
-        font-family: "Konkhmer Sleokchher", system-ui;
-        font-weight: 400;
-        font-style: normal;
+      .top-bar {
+        width: 100%;
+        background-color: #222;
+        color: white;
+        padding: 8px 20px;
+        font-size: 14px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2000;
       }
 
-      .koho-extralight {
-        font-family: "KoHo", sans-serif;
-        font-weight: 200;
-        font-style: normal;
+      /* ---------- NAVIGATION BAR ---------- */
+      .navbar {
+        width: 100%;
+        background-color: #333;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        position: fixed;
+        top: 32px;
+        /* moves the nav bar below the top bar */
+        left: 0;
+
+        z-index: 1500;
       }
 
-      .koho-light {
-        font-family: "KoHo", sans-serif;
-        font-weight: 300;
-        font-style: normal;
+      .logo {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
       }
 
-      .koho-regular {
-        font-family: "KoHo", sans-serif;
-        font-weight: 400;
-        font-style: normal;
+      .nav-links {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
       }
 
-      .koho-medium {
-        font-family: "KoHo", sans-serif;
-        font-weight: 500;
-        font-style: normal;
+      .nav-links li {
+        margin-left: 20px;
       }
 
-      .koho-semibold {
-        font-family: "KoHo", sans-serif;
-        font-weight: 600;
-        font-style: normal;
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
       }
 
-      .koho-bold {
-        font-family: "KoHo", sans-serif;
-        font-weight: 700;
-        font-style: normal;
+      .nav-links a:hover {
+        color: #ffcc00;
       }
 
-      .koho-extralight-italic {
-        font-family: "KoHo", sans-serif;
-        font-weight: 200;
-        font-style: italic;
+      .order-btn {
+        display: inline-block;
+        padding: 12px 28px;
+        background-color: #ff9900;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 6px;
+        text-align: center;
+        transition: 0.3s ease;
       }
 
-      .koho-light-italic {
-        font-family: "KoHo", sans-serif;
-        font-weight: 300;
-        font-style: italic;
+      .order-btn:hover {
+        background-color: #e68a00;
+        cursor: pointer;
       }
 
-      .koho-regular-italic {
-        font-family: "KoHo", sans-serif;
-        font-weight: 400;
-        font-style: italic;
-      }
+      .button-container {
+        text-align: left;
+        margin-top: 150px;
 
-      .koho-medium-italic {
-        font-family: "KoHo", sans-serif;
-        font-weight: 500;
-        font-style: italic;
-      }
+        .konkhmer-sleokchher-regular {
+          font-family: "Konkhmer Sleokchher", system-ui;
+          font-weight: 400;
+          font-style: normal;
+        }
 
-      .koho-semibold-italic {
-        font-family: "KoHo", sans-serif;
-        font-weight: 600;
-        font-style: italic;
-      }
+        .koho-extralight {
+          font-family: "KoHo", sans-serif;
+          font-weight: 200;
+          font-style: normal;
+        }
 
-      .koho-bold-italic {
-        font-family: "KoHo", sans-serif;
-        font-weight: 700;
-        font-style: italic;
-      }
+        .koho-light {
+          font-family: "KoHo", sans-serif;
+          font-weight: 300;
+          font-style: normal;
+        }
 
-      .kosugi-regular {
-        font-family: "Kosugi", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-      }
+        .koho-regular {
+          font-family: "KoHo", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+        }
+
+        .koho-medium {
+          font-family: "KoHo", sans-serif;
+          font-weight: 500;
+          font-style: normal;
+        }
+
+        .koho-semibold {
+          font-family: "KoHo", sans-serif;
+          font-weight: 600;
+          font-style: normal;
+        }
+
+        .koho-bold {
+          font-family: "KoHo", sans-serif;
+          font-weight: 700;
+          font-style: normal;
+        }
+
+        .koho-extralight-italic {
+          font-family: "KoHo", sans-serif;
+          font-weight: 200;
+          font-style: italic;
+        }
+
+        .koho-light-italic {
+          font-family: "KoHo", sans-serif;
+          font-weight: 300;
+          font-style: italic;
+        }
+
+        .koho-regular-italic {
+          font-family: "KoHo", sans-serif;
+          font-weight: 400;
+          font-style: italic;
+        }
+
+        .koho-medium-italic {
+          font-family: "KoHo", sans-serif;
+          font-weight: 500;
+          font-style: italic;
+        }
+
+        .koho-semibold-italic {
+          font-family: "KoHo", sans-serif;
+          font-weight: 600;
+          font-style: italic;
+        }
+
+        .koho-bold-italic {
+          font-family: "KoHo", sans-serif;
+          font-weight: 700;
+          font-style: italic;
+        }
+
+        .kosugi-regular {
+          font-family: "Kosugi", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+        }
     </style>
 
   </head>
   <body>
-    <h1>Multi-Page Site Demo</h1>
-    <nav>
-      <ul>
+
+    <div class="top-bar">
+      <span>Call Us: 123-456-7890 | Open 10am–10pm</span>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="logo">My Business</div>
+
+      <ul class="nav-links">
         <li><a href="homepage.html">HOME</a></li>
         <li><a href="about.html">ABOUT</a></li>
         <li><a href="menu.html">MENU</a></li>
         <li><a href="delivery.html">DELIVERY</a></li>
       </ul>
     </nav>
+
+    <div class="button-container">
+      <a href="#" class="order-btn">Order Online</a>
+    </div>
+
   </body>
 </html>
