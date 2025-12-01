@@ -75,24 +75,47 @@
         width: 100%;
         background-color: #92261D;
         color: #E7DAC8;
-        padding: 10px 20px;
-        font-size: 14px;
+        height: 42px;
+        display: flex;
+        align-items: center;
         position: fixed;
         top: 0;
         left: 0;
         z-index: 2000;
+        padding: 0;
+        /* Remove horizontal padding so the green starts at far left */
+      }
+
+      .call-us {
+        font-family: "Koulen", sans-serif;
+        background-color: green;
+        color: white;
+        padding: 0px 20px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+
+      .open-hours {
+        font-family: "Kosugi", sans-serif;
+        color: white;
+        padding: 0px 12px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
       }
 
       .navbar {
         font-family: "Koulen", sans-serif;
         width: 100%;
         background-color: #411E1B;
-        padding: 20px 20px;
+        padding: 18px 20px;
         display: flex;
         align-items: center;
 
         position: fixed;
-        top: 36px;
+        top: 42px;
         left: 0;
       }
 
@@ -152,7 +175,7 @@
       .checkers {
         position: absolute;
         right: 0;
-        top: 116px;
+        top: 118px;
         width: 402px;
         height: 1106px;
       }
@@ -247,10 +270,10 @@
   <body>
 
     <div class="top-bar">
-      <span>Call Us: 123-456-7890 | Open 10am–10pm</span>
+      <div class="call-us">Call Us: 123-456-7890</div>
+      <div class="open-hours">Open 10am–10pm</div>
     </div>
 
-    <!-- Navigation Bar -->
     <nav class="navbar">
       <div class="logo">Builder Brother’s Pizza Place</div>
 
