@@ -20,7 +20,7 @@
 
       body {
         font-family: "Kosugi", sans-serif;
-        background-color: #AB3126;
+        background-color: #E7DAC8;
         font-size: 16px;
         margin: 0 auto;
         width: 1200px;
@@ -85,6 +85,15 @@
       }
 
       /* CLASSES */
+
+      .checkers {
+        position: fixed;
+        top: 176px;
+        right: 0;
+        width: auto;
+        height: 100%;
+        z-index: -1;
+      }
 
       .top-bar {
         width: 100%;
@@ -191,16 +200,7 @@
         cursor: pointer;
       }
 
-      /* DELIVERY CONTENT */
-      
-      .checkers {
-        position: fixed;
-        top: 176px;
-        right: 0;
-        width: auto;
-        height: 100%;
-        z-index: -1;
-      }
+      /* HOMEPAGE CONTENT */
 
       .red {
         color: #C43B2F;
@@ -246,30 +246,15 @@
         margin-top: 920px;
         margin-left: 0;
       }
-      
-      .deliverypop {
-  position: absolute; 
-  bottom: 0px;
-  width: 80%;
-  margin-top: 150px;
-}
 
-.popup {
-  width: 100%; 
-  height: auto;
-  display: block;
-  position: relative;   
-  z-index: -1;
-}
-
-.place {
-  position: absolute;       
-  top: 30px;             
-  right: 20px;
-  width: 45%;    
-  height: auto;
-  z-index: 0.5;   
-}
+      .pizza {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        max-width: 70%;
+        max-height: 70%;
+        z-index: -1;
+      }
 
       .slogan {
         position: relative;
@@ -413,7 +398,7 @@
       <img src="cart.png" alt="A shopping cart" class="cart-icon">
     </nav>
 
-    <!-- DELIVERY CONTENT -->
+    <!-- HOMEPAGE CONTENT -->
 
     <div class="slogan">
       <h1>
@@ -429,15 +414,12 @@
     </div>
 
     <div class="button-container">
-      <a href="#" class="orderbut">Order Delivery</a>
+      <a href="#" class="orderbut">Order Online</a>
     </div>
 
-    <img src="delivery_checkers.png" alt="Two red checkered patterns" class="checkers">
-    
-   <div class="deliverypop">
-  <img src="deliverypop.png" alt="off-white rectangle" class="popup">
-  <img src="realplace.png" alt="Builder Brothers Pizza Place Building" class="place">
-</div>
+    <img src="checkers.png" alt="A red checkered pattern" class="checkers">
+
+    <img src="homepage_pizza.png" alt="A pepperoni pizza" class="pizza">
 
 
   </body>
