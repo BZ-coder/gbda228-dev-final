@@ -34,6 +34,18 @@
         line-height: 1.2;
       }
 
+      h2 {
+        font-family: "Koulen", sans-serif;
+        color: #C43B2F;
+      }
+
+      h3 {
+  font-family: "KoHo", sans-serif;
+  color: #AB3126;
+        font-weight: 400px;
+        text-transform: none;
+}
+
       nav {
         width: 100%;
         margin: 0 auto;
@@ -136,7 +148,6 @@
       .txtlogo {
         color: #E49725;
         font-size: 36px;
-        font-weight: bold;
         margin-left: 50px;
       }
 
@@ -185,11 +196,15 @@
         align-self: center;
         cursor: pointer;
       }
-      
+
       /* HOMEPAGE CONTENT */
-      
+
       .red {
         color: #C43B2F;
+      }
+
+      .darkred {
+        color: #AB3126;
       }
 
       .orderbut {
@@ -240,18 +255,38 @@
         max-height: 100%;
         z-index: -1;
       }
-        
-        .slogan {
-          position: relative;
-          margin-top: 225px;
-          right: 60px;
-          font-size: 1.5em;
-          font-family: "Konkhmer Sleokchher", sans-serif;
-          color: #411E1B;
-          text-align: left;
-          padding-left: 20px;
-          z-index: 0.5;
-        }
+
+      .slogan {
+        position: relative;
+        margin-top: 225px;
+        right: 60px;
+        font-size: 1.5em;
+        font-family: "Konkhmer Sleokchher", sans-serif;
+        color: #411E1B;
+        text-align: left;
+        padding-left: 20px;
+        z-index: 0.5;
+      }
+      
+      .lines {
+  position: relative;
+  width: 297px;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  z-index: -1;
+  top: -60px;
+}
+      
+      .header {
+        position: relative;
+        margin-top: -65px;
+        right: 60px;
+        font-size: 1.8em;
+        text-align: left;
+        padding-left: 20px;
+        z-index: 0.5;
+      }
 
       /* FONTS */
       .konkhmer-sleokchher-regular {
@@ -339,7 +374,7 @@
       }
     </style>
   </head>
-  
+
   <body>
 
     <div class="top-bar">
@@ -362,12 +397,20 @@
 
       <img src="cart.png" alt="A shopping cart" class="cart-icon">
     </nav>
+
     <!-- HOMEPAGE CONTENT -->
 
     <div class="slogan">
       <h1>
         <span class="red">FAST DELIVERY.</span><br>DELICIOUS PIZZA.
       </h1>
+       <img src="lines.png" alt="Two red lines" class="lines">
+    </div>
+    
+    <div class="header">
+       <h3>
+       Best in Robloxia<br>since 2008.
+      </h3>
     </div>
 
     <div class="button-container">
@@ -377,6 +420,7 @@
     <img src="checkers.png" alt="A red checkered pattern" class="checkers">
 
     <img src="homepage_pizza.png" alt="A pepperoni pizza" class="pizza">
+    
 
   </body>
 </html>
