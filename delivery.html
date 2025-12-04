@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Konkhmer+Sleokchher&family=Kosugi&family=Koulen&display=swap" rel="stylesheet">
+    <!-- Nav font -->
+    <link href="https://fonts.googleapis.com">
+
+    <title>Work at a Pizza Place</title>
+    <style>
+      html {
+        width: 1440px;
+        height: 1200px;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      body {
+        font-family: "Kosugi", sans-serif;
+        background-color: #E7DAC8;
+        font-size: 16px;
+        margin: 0 auto;
+        width: 1200px;
+        height: 100%;
+      }
+
+      h1 {
+        font-family: "Konkhmer Sleokchher", system-ui;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 3.5em;
+        width: 400px;
+        line-height: 1.2;
+        letter-spacing: 3px;
+      }
+
+      h2 {
+        font-family: "Koulen", sans-serif;
+        color: #C43B2F;
+      }
+
+      h3 {
+        font-family: "KoHo", sans-serif;
+        color: #AB3126;
+        font-weight: 400px;
+        text-transform: none;
+      }
+
+      nav {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        align-items: center;
+        padding-right: 50px;
+        position: fixed;
+      }
+
+      ul {
+        list-style: none;
+        font-family: "Koulen", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 1.375em;
+        text-transform: uppercase;
+        margin-left: 0;
+        padding-left: 0;
+      }
+
+      li {
+        display: inline-block;
+        margin-right: 15px;
+
+      }
+
+      ul li a {
+        color: #E7DAC8;
+        text-decoration: none;
+      }
+
+      ul li a:hover {
+        text-decoration: underline;
+      }
+
+      /* CLASSES */
+
+      .checkers {
+        position: fixed;
+        top: 176px;
+        right: 0;
+        width: auto;
+        height: 100%;
+        z-index: -1;
+      }
+
+      .top-bar {
+        width: 100%;
+        background-color: #92261D;
+        color: #E7DAC8;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 0;
+        z-index: 1;
+      }
+
+      .call-us {
+        font-family: "Koulen", sans-serif;
+        background-color: #2E8E40;
+        color: #411E1B;
+        font-size: 30px;
+        padding: 0px 110px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        white-space: nowrap;
+        overflow: hidden;
+        margin-right: 20px;
+      }
+
+      .specials {
+        font-family: "Kosugi", sans-serif;
+        color: #E7DAC8;
+        padding: 0px 12px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+      }
+
+      .navbar {
+        font-family: "Koulen", sans-serif;
+        width: 100%;
+        background-color: #411E1B;
+        padding: 18px 20px;
+        display: flex;
+        align-items: center;
+
+        position: fixed;
+        top: 60px;
+        left: 0;
+        z-index: 1;
+      }
+
+      .txtlogo {
+        color: #E49725;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+      .logo {
+        height: 80px;
+        width: auto;
+        margin-right: 0px;
+        margin-left: 35px;
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        margin-left: auto;
+      }
+
+      .nav-links li {
+        margin-left: 60px;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        font-size: 30px;
+      }
+
+      .nav-links a:hover {
+        color: #ffcc00;
+      }
+
+      .home-link,
+      .menu-link {
+        color: #E49725;
+      }
+
+      .pizza-place {
+        color: #F3F3F3;
+      }
+
+      .cart-icon {
+        width: auto;
+        height: 37px;
+        margin-left: 40px;
+        margin-right: 60px;
+        align-self: center;
+        cursor: pointer;
+      }
+
+      /* DELIVERY CONTENT */
+
+      .red {
+        color: #C43B2F;
+      }
+
+      .darkred {
+        color: #AB3126;
+      }
+
+      .orderbut {
+        font-family: "Koulen", sans-serif;
+        display: inline-block;
+        padding: 25px 35px;
+        background-color: #2E8E40;
+        color: white;
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: bold;
+        border-radius: 5px;
+        text-align: center;
+        transition: 0.3s ease;
+        position: relative;
+        border: 2px solid #411E1B;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        text-shadow:
+          2px 2px 0px #411E1B,
+          -1px -1px 0px #411E1B,
+          1px -1px 0px #411E1B,
+          -1px 1px 0px #411E1B;
+        bottom: 850px;
+        left: -30px;
+      }
+
+      .orderbut:hover {
+        background-color: #197747;
+        cursor: pointer;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+      }
+
+      .button-container {
+        text-align: left;
+        margin: 0;
+        margin-top: 920px;
+        margin-left: 0;
+      }
+
+      .pizza {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        max-width: 70%;
+        max-height: 70%;
+        z-index: -1;
+      }
+
+      .slogan {
+        position: relative;
+        margin-top: 225px;
+        right: 60px;
+        font-size: 1.5em;
+        font-family: "Konkhmer Sleokchher", sans-serif;
+        color: #411E1B;
+        text-align: left;
+        padding-left: 20px;
+        z-index: 0.5;
+      }
+
+      .lines {
+        position: relative;
+        width: 297px;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        z-index: 0.5;
+        top: -60px;
+      }
+
+      .header {
+        position: relative;
+        margin-top: -65px;
+        right: 60px;
+        font-size: 1.8em;
+        text-align: left;
+        padding-left: 20px;
+        z-index: 0.5;
+      }
+
+      /* FONTS */
+      .konkhmer-sleokchher-regular {
+        font-family: "Konkhmer Sleokchher", system-ui;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .koho-extralight {
+        font-family: "KoHo", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+      }
+
+      .koho-light {
+        font-family: "KoHo", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+
+      .koho-regular {
+        font-family: "KoHo", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .koho-medium {
+        font-family: "KoHo", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+
+      .koho-semibold {
+        font-family: "KoHo", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+
+      .koho-bold {
+        font-family: "KoHo", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      .koho-extralight-italic {
+        font-family: "KoHo", sans-serif;
+        font-weight: 200;
+        font-style: italic;
+      }
+
+      .koho-light-italic {
+        font-family: "KoHo", sans-serif;
+        font-weight: 300;
+        font-style: italic;
+      }
+
+      .koho-regular-italic {
+        font-family: "KoHo", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+      }
+
+      .koho-medium-italic {
+        font-family: "KoHo", sans-serif;
+        font-weight: 500;
+        font-style: italic;
+      }
+
+      .koho-semibold-italic {
+        font-family: "KoHo", sans-serif;
+        font-weight: 600;
+        font-style: italic;
+      }
+
+      .koho-bold-italic {
+        font-family: "KoHo", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+      }
+
+      .kosugi-regular {
+        font-family: "Kosugi", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="top-bar">
+      <div class="call-us">Call Us: 123-456-7890</div>
+      <div class="specials">Specials 20% OFF on Wednesdays - Specials 20% OFF on Wednesdays - Specials 20% OFF on Wednesdays - Specials 20% OFF</div>
+    </div>
+
+    <nav class="navbar">
+      <img src="Builder_Brothers_Pizza_Logo.webp" alt="Two robloxian heads wearing construction hats, one with a black mustache. They are positioned above a green ribbon with white text (red stroke) that reads: Builder Brothers PIZZA" class="logo">
+      <div class="txtlogo">
+        Builder Brother’s <span class="pizza-place">Pizza Place</span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="home-link">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="menu.html" class="menu-link">MENU</a></li>
+        <li><a href="delivery.html">DELIVERY</a></li>
+      </ul>
+
+      <img src="cart.png" alt="A shopping cart" class="cart-icon">
+    </nav>
+
+    <!-- DELIVERY CONTENT -->
+
+    <div class="slogan">
+      <h1>
+        <span class="red">FAST DELIVERY.</span><br>DELICIOUS PIZZA.
+      </h1>
+      <img src="lines.png" alt="Two red lines" class="lines">
+    </div>
+
+    <div class="header">
+      <h3>
+        Best in Robloxia<br>since 2008.
+      </h3>
+    </div>
+
+    <div class="button-container">
+      <a href="#" class="orderbut">Order Online</a>
+    </div>
+
+    <img src="checkers.png" alt="A red checkered pattern" class="checkers">
+
+    <img src="" alt="Builder Brothers Pizza Place Building" class="pizza">
+
+
+  </body>
+</html>
