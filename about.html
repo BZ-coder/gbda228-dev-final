@@ -42,6 +42,7 @@
       h2 {
         font-family: "Koulen", sans-serif;
         color: #C43B2F;
+        font-size: 2em;
       }
 
       h3 {
@@ -85,9 +86,10 @@
       ul li a:hover {
         text-decoration: underline;
       }
-      
+
       p {
-        
+        color: #411E1B;
+        font-size: 1.2em;
       }
 
       /* CLASSES */
@@ -216,52 +218,6 @@
         color: #AB3126;
       }
 
-      .orderbut {
-        font-family: "Koulen", sans-serif;
-        display: inline-block;
-        padding: 25px 35px;
-        background-color: #2E8E40;
-        color: white;
-        text-decoration: none;
-        font-size: 30px;
-        font-weight: bold;
-        border-radius: 5px;
-        text-align: center;
-        transition: 0.3s ease;
-        position: relative;
-        border: 2px solid #411E1B;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-        text-shadow:
-          2px 2px 0px #411E1B,
-          -1px -1px 0px #411E1B,
-          1px -1px 0px #411E1B,
-          -1px 1px 0px #411E1B;
-        bottom: 850px;
-        left: -30px;
-      }
-
-      .orderbut:hover {
-        background-color: #197747;
-        cursor: pointer;
-        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-      }
-
-      .button-container {
-        text-align: left;
-        margin: 0;
-        margin-top: 920px;
-        margin-left: 0;
-      }
-
-      .place {
-        position: absolute;
-        top: 40px;
-        right: 25px;
-        width: 50%;
-        height: auto;
-        z-index: 0.5;
-      }
-
       .slogan {
         position: relative;
         margin-top: 225px;
@@ -275,13 +231,11 @@
       }
 
       .lines {
-        position: relative;
-        width: 297px;
+        position: absolute;
+        width: 1640px;
         height: auto;
-        max-width: 100%;
-        max-height: 100%;
-        z-index: 0.5;
-        top: -60px;
+        z-index: 1;
+        top: 730px;
       }
 
       .header {
@@ -294,7 +248,7 @@
         z-index: 0.5;
       }
 
-      
+
       .top {
         background: #C43B2F;
         margin-top: 160px;
@@ -306,11 +260,11 @@
         z-index: 1;
       }
 
-      .top-images{
+      .top-images {
         display: flex;
         gap: 0px;
         margin-top: 0px;
-        
+
         width: auto;
         height: 550px;
         object-fit: cover;
@@ -322,10 +276,37 @@
       }
 
       .center-img {
+        margin-top: 60px;
         height: auto;
         width: 100%;
         display: block;
+        z-index: -1;
       }
+      
+      .lore {
+        position: relative;
+        top: -730px;
+        left: 500px;
+  width: 100%;
+  padding: 20px 40px;
+}
+
+.top-row {
+  display: flex;
+  gap: 30px;
+  width: 958px;
+}
+
+.text-col {
+  flex: 1;
+}
+
+.ingredients-img {
+  width: 406px;
+  height: auto;
+  margin-left: 40px;
+  margin-top: 40px;
+}
 
       /* FONTS */
       .konkhmer-sleokchher-regular {
@@ -448,34 +429,38 @@
     </div>
 
     <div class="bottom">
-      <img src="clipart_ingredients.png" class="bottom-bg">
-<p>
-        
-  <h2>
-        BACK IN 2008,
-      </h2>
-      
-  It all began with two brothers and a dream. Having recently travelled from Italy, we sought to share their traditional recipes and create a thriving business in Canada.
+      <img src="clipart_ingredients.png" class="center-img">
+      <img src="about_lines.png" class="lines">
+    </div>
+
+    <div class="lore">
+
+  <div class="top-row">
+    <div class="text-col">
+      <h2>BACK IN 2008,</h2>
+
+      <p>
+        It all began with two brothers and a dream. Having recently travelled from Italy, we sought to share their traditional recipes and create a thriving business in Canada.
         <br><br>
         Things started out slow when we first put up business, building our reputation and notability from the ground up. Soon, the public began to take notice.
         <br><br>
         With freshly sourced ingredients straight from our homeland, we make sure to give reason for one of our slogans:
       </p>
-
-      <h2>
-        “A smile in every slice”
-      </h2>
-    
-    <p>
-      Soon after the boom in business, we began welcoming new staff into
-      <br>the family. Following that, we began to deliver our pizza so folks
-      <br>could enjoy pizza in their homes with a click of a button or a call.
-      <br>We aspire to meet the needs of our highly esteemed, loyal customers.
-    </p>
-
-      
-        <img src="Ingredients.png" class="bottom-img">
     </div>
+
+    <img src="Ingredients.png" class="ingredients-img">
+  </div>
+
+  <h2>“A smile in every slice”</h2>
+
+  <p>
+    Soon after the boom in business, we began welcoming new staff into
+    <br>the family. Following that, we began to deliver our pizza so folks
+    <br>could enjoy pizza in their homes with a click of a button or a call.
+    <br>We aspire to meet the needs of our highly esteemed, loyal customers.
+  </p>
+
+</div>
 
   </body>
 </html>
