@@ -23,8 +23,11 @@
         background-color: #E7DAC8;
         font-size: 16px;
         margin: 0 auto;
-        width: 1200px;
         height: 100%;
+      }
+
+      .contain {
+        width: 1200px;
       }
 
       h1 {
@@ -288,6 +291,44 @@
         z-index: 0.5;
       }
 
+      .section {
+        width: 100%;
+        padding: 60px 20px;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 0;
+      }
+
+      .top {
+        background: #f0f0f0;
+        margin-top: 160px;
+      }
+
+      .bottom {
+        background: #4CAF50;
+        color: white;
+      }
+
+      .top-images,
+      .bottom-images {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 30px;
+      }
+
+      .top-img,
+      .bottom-img {
+        width: auto;
+        height: 250px;
+      }
+
+      .center-img {
+        height: auto;
+        width: 100%;
+        display: block;
+      }
+
       /* FONTS */
       .konkhmer-sleokchher-regular {
         font-family: "Konkhmer Sleokchher", system-ui;
@@ -400,43 +441,40 @@
 
     <!-- ABOUT CONTENT -->
 
-    <div class="slogan">
-      <h1>
-        <span class="red">FAST DELIVERY.</span><br>DELICIOUS PIZZA.
-      </h1>
-      <img src="lines.png" alt="Two red lines" class="lines">
+    <div class="section top">
+
+      <div class="top-images">
+        <img src="about_checkers.png" class="top-img">
+        <img src="ovenpizza.png" class="top-img">
+      </div>
     </div>
 
-    <div class="header">
-      <h3>
-        Best in Robloxia<br>since 2008.
-      </h3>
+    <div class="section bottom">
+      <img src="clipart_ingredients.png" class="bottom-bg">
+
+      <div class="bottom-images">
+        <img src="ovenpizza.png" class="bottom-img">
+        <img src="Ingredients.png" class="bottom-img">
+      </div>
     </div>
 
-    <div class="button-container">
-      <a href="#" class="orderbut">Order Online</a>
+    <div class="contain">
+      <p>
+        It all began with two brothers and a dream. Having recently travelled from Italy, we sought to share their traditional recipes and create a thriving business in Canada.
+        <br><br>
+        Things started out slow when we first put up business, building our reputation and notability from the ground up. Soon, the public began to take notice.
+        <br><br>
+        With freshly sourced ingredients straight from our homeland, we make sure to give reason for one of our slogans:
+      </p>
+
+      <h2>
+        “A smile in every slice”
+      </h2>
+
+      <h2>
+        BACK IN 2008,
+      </h2>
     </div>
-
-    <img src="about_checkers.png" alt="A red checkered pattern" class="checkers">
-    
-    <img src="Ingredients.png" alt="Builder Brothers Pizza Place Building" class="place">
-    
-    <p>
-      It all began with two brothers and a dream. Having recently travelled from Italy, we sought to share their traditional recipes and create a thriving business in Canada.
-<br><br>
-Things started out slow when we first put up business, building our reputation and notability from the ground up. Soon, the public began to take notice.
-<br><br>
-With freshly sourced ingredients straight from our homeland, we make sure to give reason for one of our slogans:
-    </p>
-    
-    <h2>
-      “A smile in every slice”
-    </h2>
-    
-    <h2>
-      BACK IN 2008,
-    </h2>
-
 
   </body>
 </html>
