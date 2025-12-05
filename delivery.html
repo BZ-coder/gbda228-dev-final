@@ -39,7 +39,7 @@
 
       h2 {
         font-family: "Koulen", sans-serif;
-        color: #C43B2F;
+        color: #411E1B;
       }
 
       h3 {
@@ -82,6 +82,10 @@
 
       ul li a:hover {
         text-decoration: underline;
+      }
+      
+      p {
+        color: #411E1B;
       }
 
       /* CLASSES */
@@ -192,7 +196,7 @@
       }
 
       /* DELIVERY CONTENT */
-      
+
       .checkers {
         position: fixed;
         top: 176px;
@@ -202,10 +206,11 @@
         z-index: -1;
       }
 
-      .red {
-        color: #C43B2F;
+      .darkred-h {
+        color: #AB3126;
+        margin-left: -50px;
       }
-
+      
       .darkred {
         color: #AB3126;
       }
@@ -213,7 +218,7 @@
       .orderbut {
         font-family: "Koulen", sans-serif;
         display: inline-block;
-        padding: 25px 35px;
+        padding: 15px 30px;
         background-color: #2E8E40;
         color: white;
         text-decoration: none;
@@ -230,8 +235,8 @@
           -1px -1px 0px #411E1B,
           1px -1px 0px #411E1B,
           -1px 1px 0px #411E1B;
-        bottom: 850px;
-        left: -30px;
+        top: 230px;
+        left: 1350px;
       }
 
       .orderbut:hover {
@@ -247,43 +252,141 @@
         margin-left: 0;
       }
 
-      .place {
-        position: absolute;
-        max-width: 70%;
-        max-height: 70%;
+      .deliverypop {
+        position: fixed;
+        bottom: 0px;
+        left: 25%;
+        width: 80%;
+        max-width: 1440px;
+        min-width: 700px;
+        height: auto;
         z-index: -1;
       }
 
-      .slogan {
-        position: relative;
-        margin-top: 225px;
-        right: 60px;
-        font-size: 1.5em;
-        font-family: "Konkhmer Sleokchher", sans-serif;
-        color: #411E1B;
-        text-align: left;
-        padding-left: 20px;
-        z-index: 0.5;
-      }
-
-      .lines {
-        position: relative;
-        width: 297px;
+      .popup {
+        width: 100%;
         height: auto;
-        max-width: 100%;
-        max-height: 100%;
-        z-index: 0.5;
-        top: -60px;
+        display: block;
+        position: relative;
+        z-index: -1;
       }
 
-      .header {
-        position: relative;
-        margin-top: -65px;
-        right: 60px;
-        font-size: 1.8em;
-        text-align: left;
-        padding-left: 20px;
+      .place {
+        position: absolute;
+        top: 40px;
+        right: 25px;
+        width: 50%;
+        height: auto;
         z-index: 0.5;
+      }
+
+      .exit {
+        position: absolute;
+        top: 75px;
+        left: 40px;
+        z-index: 0.5;
+        width: 37px;
+        height: auto;
+        margin-left: 40px;
+        margin-right: 60px;
+        align-self: center;
+      }
+      
+      .icon1 {
+        position: absolute;
+        top: 160px;
+        left: 80px;
+        z-index: 0.5;
+        width: 37px;
+        height: auto;
+        margin-left: 40px;
+        margin-right: 60px;
+        align-self: center;
+      }
+      
+      .location {
+        position: absolute;
+        top: 140px;
+        left: 170px;
+        z-index: 0.5;
+        font-size: 30px;
+        line-height: 1.5;
+      }
+      
+      .icon2 {
+        position: absolute;
+        top: 300px;
+        left: 80px;
+        z-index: 0.5;
+        width: 37px;
+        height: auto;
+        margin-left: 40px;
+        margin-right: 60px;
+        align-self: center;
+      }
+      
+      .hours {
+        position: absolute;
+        top: 280px;
+        left: 170px;
+        z-index: 0.5;
+        font-size: 30px;
+        line-height: 1.5;
+      }
+      
+      .icon3 {
+        position: absolute;
+        top: 420px;
+        left: 85px;
+        z-index: 0.5;
+        width: 37px;
+        height: auto;
+        margin-left: 40px;
+        margin-right: 60px;
+        align-self: center;
+      }
+      
+      .phone {
+        position: absolute;
+        top: 400px;
+        left: 170px;
+        z-index: 0.5;
+        font-size: 30px;
+        line-height: 1.5;
+      }
+      
+      .icon4 {
+        position: absolute;
+        top: 920px;
+        left: 90px;
+        z-index: 0.5;
+        width: 40px;
+        height: auto;
+        margin-left: 40px;
+        margin-right: 60px;
+        align-self: center;
+      }
+      
+      .menu {
+        position: absolute;
+        top: 980px;
+        left: 170px;
+        z-index: 0.5;
+        font-size: 35px;
+        line-height: 1.5;
+        font-family: "Koulen", sans-serif;
+        text-decoration-color: #AB3126;
+        text-decoration-thickness: 2px;
+      }
+      
+      .desc {
+        position: absolute;
+        top: 565px;
+        left: 740px;
+        z-index: 0.5;
+        font-size: 25px;
+        width: 590px;
+        line-height: 1.5;
       }
 
       /* FONTS */
@@ -398,26 +501,39 @@
 
     <!-- DELIVERY CONTENT -->
 
-    <div class="slogan">
-      <h1>
-        <span class="red">FAST DELIVERY.</span><br>DELICIOUS PIZZA.
-      </h1>
-      <img src="lines.png" alt="Two red lines" class="lines">
-    </div>
+    <img src="delivery_checkers.png" alt="Two red checkered patterns" class="checkers">
 
-    <div class="header">
-      <h3>
-        Best in Robloxia<br>since 2008.
-      </h3>
-    </div>
-
+    <div class="deliverypop">
+      <img src="deliverypop.png" alt="off-white rectangle" class="popup">
+      <img src="realplace.png" alt="Builder Brothers Pizza Place Building" class="place">
+      <img src="X.png" alt="Builder Brothers Pizza Place Building" class="exit">
+      <img src="location.png" alt="Builder Brothers Pizza Place Building" class="icon1">
+      <h2 class="location">
+      LOCATION:<br>
+      <span class="darkred-h">Work At A Pizza Place, Roblox</span>
+    </h2>
+      <img src="calendar.png" alt="Builder Brothers Pizza Place Building" class="icon2">
+      <h2 class="hours">
+      HOURS:<br>
+      <span class="darkred-h">OPEN 24/7</span>
+    </h2>
+       <img src="phone.png" alt="Builder Brothers Pizza Place Building" class="icon3">
+    <h2 class="phone">
+      PHONE:<br>
+      <span class="darkred-h">(416) 967-1010</span>
+    </h2>
+      <img src="cutlery.png" alt="Builder Brothers Pizza Place Building" class="icon4">
+      <a href="menu.html" class="menu"><span class="darkred-h">SEE OUR MENU</span></a>
+      
+      <p class="desc">
+       Welcome! Builder Brother’s Pizza Place offers the best pizza dining and delivery experience you’ll ever receive! We have a wide selection of pizza and a speedy delivery service that will never disappoint!
+      <br><br><span class="darkred">As we always say: If at first you don't succeed, order pizza.</span>
+    </p>
+    </div> 
+    
     <div class="button-container">
       <a href="#" class="orderbut">Order Delivery</a>
     </div>
-
-    <img src="delivery_checkers.png" alt="Two red checkered patterns" class="checkers">
-
-    <img src="realplace.png" alt="Builder Brothers Pizza Place Building" class="place">
 
 
   </body>
