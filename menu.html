@@ -236,7 +236,7 @@
         top: 220px;
         left: 0px;
         width: 100%;
-        height: auto;
+        height: 0 auto;
         display: block;
         z-index: -1;
         margin: 0px;
@@ -245,9 +245,9 @@
       .container {
         display: grid;
         grid-template-columns: 33% 33% 33%;
-        gap: 40px;
+        column-gap: 40px;
 
-        width: 1200px;
+        max-width: 1200px;
         margin: auto;
         border-radius: 0.5em;
       }
