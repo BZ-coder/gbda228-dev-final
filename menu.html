@@ -88,6 +88,12 @@
 
       /* CLASSES */
 
+      .main-container {
+        width: 1440px;
+        height: 1200px;
+        margin: 0 auto;
+      }
+
       .checkers {
         position: fixed;
         top: 176px;
@@ -226,7 +232,7 @@
         margin-top: 0px;
         top: -50px;
       }
-      
+
       .redborder {
         outline: 2px solid #C43B2F;
       }
@@ -257,12 +263,23 @@
         margin-top: 0px;
       }
 
+      /*
+    Code copied from: ChatGPT
+    Author: [N/A]
+    Name: [Belle Zhu]
+    Description: [wawnted to make the pizza images pop out when you hover your mouse over them, asked GPT for help understanding)]
+    Date retrieved: [12/5/2025]
+    */
+
       .img-box {
         width: 100%;
         overflow: hidden;
         border-radius: 0.5em;
         outline: 2px solid #411E1B;
         background-color: #F8ECDC;
+
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
       }
 
       /*
@@ -272,14 +289,20 @@
     Description: [wanted to make objects fit the entire grid item (instead of adjusting values manually, which would've taken forever)]
     Date retrieved: [12/5/2025]
     */
-      
+
       .img-box img {
-        width: 400px;
-        height: 400px;
+        width: 100%;
+        height: 100%;
+        max-height: 400px;
         object-fit: cover;
         display: block;
       }
-      
+
+      .img-box:hover {
+        transform: scale(1.05);
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.35);
+      }
+
       .img-box.redborder {
         outline: 2px solid #C43B2F;
       }
@@ -409,23 +432,25 @@
 
     <!-- MENU CONTENT -->
 
-    <div class="slogan">
-      <h2>
-        <span class="explore">EXPLORE OUR MENU</span>
-      </h2>
-    </div>
+    <div class="main-container">
+
+      <div class="slogan">
+        <h2>
+          <span class="explore">EXPLORE OUR MENU</span>
+        </h2>
+      </div>
 
 
-    <div class="bg">
-      <img src="menu_frame.png" alt="A dark brown frame.">
-      <img src="frame_BG.png" alt="A dark brown frame.">
-    </div>
+      <div class="bg">
+        <img src="menu_frame.png" alt="A dark brown frame.">
+        <img src="frame_BG.png" alt="A dark brown frame.">
+      </div>
 
-    <div class="search">
-      <img src="searchbar.png" alt="A search bar.">
-    </div>
+      <div class="search">
+        <img src="searchbar.png" alt="A search bar.">
+      </div>
 
-    <!--
+      <!--
     Code copied from: Excercise 7
     Author: [Greg Smith]
     Name: [Belle Zhu]
@@ -433,49 +458,51 @@
     Date retrieved: [12/5/2025]
     -->
 
-    <div class="container">
-      <div class="grid-item">
-        <div class="img-box redborder">
-          <img src="hawaiianpizza.png" alt="A pineapple pizza with pinapples, tomato sauce and cheese.">
+      <div class="container">
+        <div class="grid-item">
+          <div class="img-box redborder">
+            <img src="hawaiianpizza.png" alt="A pineapple pizza with pinapples, tomato sauce and cheese.">
+          </div>
+          <h2>HAWAIIAN PIZZA</h2>
         </div>
-        <h2>HAWAIIAN PIZZA</h2>
+
+        <div class="grid-item">
+          <div class="img-box">
+            <img src="margharitapizza.png" alt="A Margherita pizza with fresh tomatoes and cheese.">
+          </div>
+          <h2>MARGHERITA PIZZA</h2>
+        </div>
+
+        <div class="grid-item">
+          <div class="img-box redborder">
+            <img src="pizzacloseup.png" alt="A Margherita pizza closeup with fresh tomatoes.">
+          </div>
+          <h2>MARGHERITA PIZZA</h2>
+          <p class="lesserred">(FRESH TOMATOES)</p>
+        </div>
+
+        <div class="grid-item">
+          <div class="img-box">
+            <img src="topviewpizza.png" alt="A pepperoni pizza from top view.">
+          </div>
+          <h2>PEPPERONI</h2>
+        </div>
+
+        <div class="grid-item">
+          <div class="img-box redborder">
+            <img src="builder_special.png" alt="Our traditional special pizza with olives, cilantro, tomato, and cheese.">
+          </div>
+          <h2>BUILDER'S SPECIAL</h2>
+        </div>
+
+        <div class="grid-item">
+          <div class="img-box">
+            <img src="pepperoni_slice.png" alt="A slice of pepperoni pizza.">
+          </div>
+          <h2>PEPPERONI SLICE</h2>
+        </div>
       </div>
 
-      <div class="grid-item">
-        <div class="img-box">
-          <img src="margharitapizza.png" alt="A Margherita pizza with fresh tomatoes and cheese.">
-        </div>
-        <h2>MARGHERITA PIZZA</h2>
-      </div>
-
-      <div class="grid-item">
-        <div class="img-box redborder">
-          <img src="pizzacloseup.png" alt="A Margherita pizza closeup with fresh tomatoes.">
-        </div>
-        <h2>MARGHERITA PIZZA</h2>
-        <p class="lesserred">(FRESH TOMATOES)</p>
-      </div>
-
-      <div class="grid-item">
-        <div class="img-box">
-          <img src="topviewpizza.png" alt="A pepperoni pizza from top view.">
-        </div>
-        <h2>PEPPERONI</h2>
-      </div>
-
-      <div class="grid-item">
-        <div class="img-box redborder">
-          <img src="builder_special.png" alt="Our traditional special pizza with olives, cilantro, tomato, and cheese.">
-        </div>
-        <h2>BUILDER'S SPECIAL</h2>
-      </div>
-
-      <div class="grid-item">
-        <div class="img-box">
-          <img src="pepperonislice.png" alt="A slice of pepperoni pizza.">
-        </div>
-        <h2>PEPPERONI SLICE</h2>
-      </div>
     </div>
 
 
