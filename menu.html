@@ -22,11 +22,8 @@
         background-color: #E7DAC8;
         font-size: 16px;
         margin: 0 auto;
-        height: 100%;
-      }
-
-      .contain {
         width: 1200px;
+        height: 100%;
       }
 
       h1 {
@@ -42,7 +39,6 @@
       h2 {
         font-family: "Koulen", sans-serif;
         color: #C43B2F;
-        font-size: 2em;
       }
 
       h3 {
@@ -85,11 +81,6 @@
 
       ul li a:hover {
         text-decoration: underline;
-      }
-
-      p {
-        color: #411E1B;
-        font-size: 1.2em;
       }
 
       /* CLASSES */
@@ -208,7 +199,7 @@
         cursor: pointer;
       }
 
-      /* ABOUT CONTENT */
+      /* HOMEPAGE CONTENT */
 
       .red {
         color: #C43B2F;
@@ -216,6 +207,53 @@
 
       .darkred {
         color: #AB3126;
+      }
+
+      .orderbut {
+        font-family: "Koulen", sans-serif;
+        display: inline-block;
+        padding: 25px 35px;
+        background-color: #2E8E40;
+        color: white;
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: bold;
+        border-radius: 5px;
+        text-align: center;
+        transition: 0.3s ease;
+        position: relative;
+        border: 2px solid #411E1B;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        text-shadow:
+          2px 2px 0px #411E1B,
+          -1px -1px 0px #411E1B,
+          1px -1px 0px #411E1B,
+          -1px 1px 0px #411E1B;
+        bottom: 850px;
+        left: -30px;
+      }
+
+      .orderbut:hover {
+        background-color: #197747;
+        cursor: pointer;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+      }
+
+      .button-container {
+        text-align: left;
+        margin: 0;
+        margin-top: 920px;
+        margin-left: 0;
+      }
+
+      .pizza {
+        position: absolute;
+        bottom: -191px;
+        right: -119px;
+  
+        max-width: 120%;
+        max-height: auto;
+        z-index: -1;
       }
 
       .slogan {
@@ -231,11 +269,13 @@
       }
 
       .lines {
-        position: absolute;
-        width: 2000px;
+        position: relative;
+        width: 297px;
         height: auto;
-        z-index: 1;
-        top: 730px;
+        max-width: 100%;
+        max-height: 100%;
+        z-index: 0.5;
+        top: -60px;
       }
 
       .header {
@@ -246,75 +286,6 @@
         text-align: left;
         padding-left: 20px;
         z-index: 0.5;
-      }
-
-
-      .top {
-        background: #C43B2F;
-        margin-top: 160px;
-        z-index -1:
-      }
-
-      .bottom {
-        background: #E7DAC8;
-        z-index: 1;
-      }
-
-      .top-images {
-        display: flex;
-        gap: 0px;
-        margin-top: 0px;
-
-        width: auto;
-        height: 550px;
-        object-fit: cover;
-      }
-
-      .top-img {
-        width: auto;
-        height: auto;
-      }
-
-      .center-img {
-        margin-top: 60px;
-        margin-left: 200px;
-        height: auto;
-        width: 100%;
-        display: block;
-        z-index: -1;
-      }
-
-      .lore {
-        position: relative;
-        top: -730px;
-        left: 700px;
-        width: 100%;
-        padding: 20px 40px;
-      }
-
-      .top-row {
-        display: flex;
-        gap: 30px;
-        width: 958px;
-      }
-
-      .text-col {
-        flex: 1;
-      }
-
-      .ingredients-img {
-        width: 406px;
-        height: auto;
-        margin-left: 40px;
-        margin-top: 40px;
-      }
-
-      .timeline {
-        position: absolute;
-        left: -670px;
-        top: 0;
-        width: 459px;
-        height: auto;
       }
 
       /* FONTS */
@@ -427,49 +398,29 @@
       <img src="cart.png" alt="A shopping cart" class="cart-icon">
     </nav>
 
-    <!-- ABOUT CONTENT -->
+    <!-- HOMEPAGE CONTENT -->
 
-    <div class="top">
-
-      <div class="top-images">
-        <img src="about_checkers.png" class="top-img">
-        <img src="ovenpizza.png" class="top-img">
-      </div>
+    <div class="slogan">
+      <h1>
+        <span class="red">FAST DELIVERY.</span><br>DELICIOUS PIZZA.
+      </h1>
+      <img src="lines.png" alt="Two red lines" class="lines">
     </div>
 
-    <div class="bottom">
-      <img src="clipart_ingredients.png" class="center-img">
-      <img src="about_lines.png" class="lines">
+    <div class="header">
+      <h3>
+        Best in Robloxia<br>since 2008.
+      </h3>
     </div>
 
-    <div class="lore">
-      <img src="timeline.png" class="timeline">
-      <div class="top-row">
-        <div class="text-col">
-          <h2>BACK IN 2008,</h2>
-
-          <p>
-            It all began with two brothers and a dream. Having recently travelled from Italy, we sought to share their traditional recipes and create a thriving business in Canada.
-            <br><br>
-            Things started out slow when we first put up business, building our reputation and notability from the ground up. Soon, the public began to take notice.
-            <br><br>
-            With freshly sourced ingredients straight from our homeland, we make sure to give reason for one of our slogans:
-          </p>
-        </div>
-
-        <img src="Ingredients.png" class="ingredients-img">
-      </div>
-
-      <h2>“A smile in every slice”</h2>
-
-      <p>
-        Soon after the boom in business, we began welcoming new staff into
-        <br>the family. Following that, we began to deliver our pizza so folks
-        <br>could enjoy pizza in their homes with a click of a button or a call.
-        <br>We aspire to meet the needs of our highly esteemed, loyal customers.
-      </p>
-
+    <div class="button-container">
+      <a href="#" class="orderbut">Order Online</a>
     </div>
+
+    <img src="checkers.png" alt="A red checkered pattern" class="checkers">
+
+    <img src="homepage_pizza_full.png" alt="A pepperoni pizza" class="pizza">
+
 
   </body>
 </html>
