@@ -211,7 +211,7 @@
         bottom: 20px;
         font-size: 60px;
       }
-      
+
       .search {
         position: relative;
         bottom: 50px;
@@ -227,6 +227,10 @@
         top: -50px;
       }
       
+      .redborder {
+        outline: 2px solid #C43B2F;
+      }
+
       .bg {
         position: absolute;
         top: 220px;
@@ -235,31 +239,54 @@
         height: auto;
         display: block;
         z-index: -1;
+        margin: 0px;
       }
 
       .container {
         display: grid;
         grid-template-columns: 33% 33% 33%;
         gap: 40px;
-        
+
         width: 1200px;
         margin: auto;
-        border-radius: 10px;
-        justify-items: center;
+        border-radius: 0.5em;
       }
 
       .grid-item {
-        margin-top: 90px;
+        text-align: center;
+        margin-top: 0px;
+      }
+
+      .img-box {
+        width: 100%;
+        overflow: hidden;
+        border-radius: 0.5em;
+        outline: 2px solid #411E1B;
         background-color: #F8ECDC;
-        min-height: 400px;
-        border-radius: 10px;
-      border-radius: 0.5em;
-      outline: 2px solid #411E1B;
+      }
+
+      /*
+    Code copied from: W3school
+    Author: [N/A]
+    Name: [Belle Zhu]
+    Description: [wanted to make objects fit the entire grid item (instead of adjusting values manually, which would've taken forever)]
+    Date retrieved: [12/5/2025]
+    */
+      
+      .img-box img {
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+        display: block;
+      }
+      
+      .img-box.redborder {
+        outline: 2px solid #C43B2F;
       }
 
       .slogan {
         position: relative;
-        margin-top: 225px;
+        margin-top: 220px;
         right: 60px;
         font-size: 1.5em;
         font-family: "Konkhmer Sleokchher", sans-serif;
@@ -387,16 +414,17 @@
         <span class="explore">EXPLORE OUR MENU</span>
       </h2>
     </div>
-    
-    
+
+
     <div class="bg">
       <img src="menu_frame.png" alt="A dark brown frame.">
+      <img src="frame_BG.png" alt="A dark brown frame.">
     </div>
-    
+
     <div class="search">
       <img src="searchbar.png" alt="A search bar.">
     </div>
-    
+
     <!--
     Code copied from: Excercise 7
     Author: [Greg Smith]
@@ -404,40 +432,52 @@
     Description: [took the code from one of our previous excercises to make the grids]
     Date retrieved: [12/5/2025]
     -->
-    
+
     <div class="container">
       <div class="grid-item">
-        <img src="hawaiianpizza.png" alt="A pineapple pizza with pinapples, tomato sauce and cheese.">
+        <div class="img-box redborder">
+          <img src="hawaiianpizza.png" alt="A pineapple pizza with pinapples, tomato sauce and cheese.">
+        </div>
         <h2>HAWAIIAN PIZZA</h2>
       </div>
 
       <div class="grid-item">
-        <img src="margharitapizza.png" alt="A Banh mi sandwich with meat, cilantro, and carrots.">
+        <div class="img-box">
+          <img src="margharitapizza.png" alt="A Margherita pizza with fresh tomatoes and cheese.">
+        </div>
         <h2>MARGHERITA PIZZA</h2>
       </div>
 
       <div class="grid-item">
-        <img src="pizzacloseup.png" alt="a margharita pizza with fresh tomatoes.">
+        <div class="img-box redborder">
+          <img src="pizzacloseup.png" alt="A Margherita pizza closeup with fresh tomatoes.">
+        </div>
         <h2>MARGHERITA PIZZA</h2>
         <p class="lesserred">(FRESH TOMATOES)</p>
       </div>
 
       <div class="grid-item">
-        <img src="topviewpizza.png" alt="A pepperoni pizza from top view.">
+        <div class="img-box">
+          <img src="topviewpizza.png" alt="A pepperoni pizza from top view.">
+        </div>
         <h2>PEPPERONI</h2>
       </div>
-      
+
       <div class="grid-item">
-        <img src="builder.png" alt="Our traditional special pizza with olives, cilantro, tomato, and cheese.">
+        <div class="img-box redborder">
+          <img src="builder_special.png" alt="Our traditional special pizza with olives, cilantro, tomato, and cheese.">
+        </div>
         <h2>BUILDER'S SPECIAL</h2>
       </div>
-      
+
       <div class="grid-item">
-        <img src="pepperonislice.png" alt="A slice of pepperoni pizza.">
+        <div class="img-box">
+          <img src="pepperonislice.png" alt="A slice of pepperoni pizza.">
+        </div>
         <h2>PEPPERONI SLICE</h2>
       </div>
     </div>
-    
+
 
   </body>
 </html>
