@@ -24,6 +24,7 @@
         margin: 0 auto;
         width: 1200px;
         height: 100%;
+        text-align: center;
       }
 
       h1 {
@@ -39,6 +40,8 @@
       h2 {
         font-family: "Koulen", sans-serif;
         color: #C43B2F;
+        text-align: center;
+        font-size: 3em;
       }
 
       h3 {
@@ -199,61 +202,59 @@
         cursor: pointer;
       }
 
-      /* HOMEPAGE CONTENT */
+      /* MENU CONTENT */
 
-      .red {
-        color: #C43B2F;
-      }
-
-      .darkred {
-        color: #AB3126;
-      }
-
-      .orderbut {
-        font-family: "Koulen", sans-serif;
-        display: inline-block;
-        padding: 25px 35px;
-        background-color: #2E8E40;
-        color: white;
-        text-decoration: none;
-        font-size: 30px;
-        font-weight: bold;
-        border-radius: 5px;
-        text-align: center;
-        transition: 0.3s ease;
+      .explore {
         position: relative;
-        border: 2px solid #411E1B;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-        text-shadow:
-          2px 2px 0px #411E1B,
-          -1px -1px 0px #411E1B,
-          1px -1px 0px #411E1B,
-          -1px 1px 0px #411E1B;
-        bottom: 850px;
-        left: -30px;
+        color: white;
+        margin-left: 200px;
+        bottom: 20px;
+        font-size: 60px;
+      }
+      
+      .search {
+        position: relative;
+        bottom: 50px;
+        margin-left: 140px;
       }
 
-      .orderbut:hover {
-        background-color: #197747;
-        cursor: pointer;
-        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+      .lesserred {
+        position: relative;
+        color: #C43B2F;
+        font-size: 30px;
+        opacity: 0.75;
+        margin-top: 0px;
+        top: -50px;
       }
-
-      .button-container {
-        text-align: left;
-        margin: 0;
-        margin-top: 920px;
-        margin-left: 0;
-      }
-
-      .pizza {
+      
+      .bg {
         position: absolute;
-        bottom: -191px;
-        right: -119px;
-  
-        max-width: 120%;
-        max-height: auto;
+        top: 220px;
+        left: 0px;
+        width: 100%;
+        height: auto;
+        display: block;
         z-index: -1;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        gap: 40px;
+        
+        width: 1200px;
+        margin: auto;
+        border-radius: 10px;
+        justify-items: center;
+      }
+
+      .grid-item {
+        margin-top: 90px;
+        background-color: #F8ECDC;
+        min-height: 400px;
+        border-radius: 10px;
+      border-radius: 0.5em;
+      outline: 2px solid #411E1B;
       }
 
       .slogan {
@@ -268,25 +269,6 @@
         z-index: 0.5;
       }
 
-      .lines {
-        position: relative;
-        width: 297px;
-        height: auto;
-        max-width: 100%;
-        max-height: 100%;
-        z-index: 0.5;
-        top: -60px;
-      }
-
-      .header {
-        position: relative;
-        margin-top: -65px;
-        right: 60px;
-        font-size: 1.8em;
-        text-align: left;
-        padding-left: 20px;
-        z-index: 0.5;
-      }
 
       /* FONTS */
       .konkhmer-sleokchher-regular {
@@ -398,29 +380,64 @@
       <img src="cart.png" alt="A shopping cart" class="cart-icon">
     </nav>
 
-    <!-- HOMEPAGE CONTENT -->
+    <!-- MENU CONTENT -->
 
     <div class="slogan">
-      <h1>
-        <span class="red">FAST DELIVERY.</span><br>DELICIOUS PIZZA.
-      </h1>
-      <img src="lines.png" alt="Two red lines" class="lines">
+      <h2>
+        <span class="explore">EXPLORE OUR MENU</span>
+      </h2>
     </div>
-
-    <div class="header">
-      <h3>
-        Best in Robloxia<br>since 2008.
-      </h3>
+    
+    
+    <div class="bg">
+      <img src="menu_frame.png" alt="A dark brown frame.">
     </div>
-
-    <div class="button-container">
-      <a href="#" class="orderbut">Order Online</a>
+    
+    <div class="search">
+      <img src="searchbar.png" alt="A search bar.">
     </div>
+    
+    <!--
+    Code copied from: Excercise 7
+    Author: [Greg Smith]
+    Name: [Belle Zhu]
+    Description: [took the code from one of our previous excercises to make the grids]
+    Date retrieved: [12/5/2025]
+    -->
+    
+    <div class="container">
+      <div class="grid-item">
+        <img src="hawaiianpizza.png" alt="A pineapple pizza with pinapples, tomato sauce and cheese.">
+        <h2>HAWAIIAN PIZZA</h2>
+      </div>
 
-    <img src="checkers.png" alt="A red checkered pattern" class="checkers">
+      <div class="grid-item">
+        <img src="margharitapizza.png" alt="A Banh mi sandwich with meat, cilantro, and carrots.">
+        <h2>MARGHERITA PIZZA</h2>
+      </div>
 
-    <img src="homepage_pizza_full.png" alt="A pepperoni pizza" class="pizza">
+      <div class="grid-item">
+        <img src="pizzacloseup.png" alt="a margharita pizza with fresh tomatoes.">
+        <h2>MARGHERITA PIZZA</h2>
+        <p class="lesserred">(FRESH TOMATOES)</p>
+      </div>
 
+      <div class="grid-item">
+        <img src="topviewpizza.png" alt="A pepperoni pizza from top view.">
+        <h2>PEPPERONI</h2>
+      </div>
+      
+      <div class="grid-item">
+        <img src="builder.png" alt="Our traditional special pizza with olives, cilantro, tomato, and cheese.">
+        <h2>BUILDER'S SPECIAL</h2>
+      </div>
+      
+      <div class="grid-item">
+        <img src="pepperonislice.png" alt="A slice of pepperoni pizza.">
+        <h2>PEPPERONI SLICE</h2>
+      </div>
+    </div>
+    
 
   </body>
 </html>
